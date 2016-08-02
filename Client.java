@@ -199,7 +199,7 @@ public class Client extends JApplet {
 	tfNameMsg[0].addActionListener( new ActionListener() {
 		public void actionPerformed(ActionEvent e ) {
 		visitorName = new String(tfNameMsg[0].getText()).trim().replaceAll(" ", "_");
-		tfNameMsg.setText(visitorName);
+		tfNameMsg[0].setText(visitorName);
 		if ( visitorName.equals("") ) {
 		JOptionPane.showMessageDialog( null, "Enter yur name and press ENTER!");
 		return;
